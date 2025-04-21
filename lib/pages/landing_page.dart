@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
-import 'components/buttons/primary_button.dart';
-import 'components/buttons/seconday_button.dart';
+import 'package:go_router/go_router.dart';
+import '../components/buttons/primary_button.dart';
+import '../components/buttons/seconday_button.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -50,7 +50,7 @@ class LandingPage extends StatelessWidget {
                   ),
                 ),
                 PrimaryButton(
-                  onPressed: () {},
+                  onPressed: () => context.go('/home'),
                   text: "Login",
                 ),
                 SecondayButton(
