@@ -1,8 +1,7 @@
+import 'package:filme_flix/app_config.dart';
 import 'package:filme_flix/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-import 'pages/landing_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print(AppConfig.instance.apiKey);
     return MaterialApp.router(
       theme: ThemeData(
         textTheme: GoogleFonts.getTextTheme('Inter').apply(

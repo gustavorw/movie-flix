@@ -8,19 +8,25 @@
         {
             "name": "filme-flix",
             "request": "launch",
-            "type": "dart"
+            "type": "dart",
+            "flutterMode": "debug",
+            "args": [
+                "--dart-define-from-file=env.json"
+            ]
         },
         {
             "name": "filme-flix (profile mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "flutterMode": "profile",
+            
         },
         {
             "name": "filme-flix (release mode)",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
+            "flutterMode": "release",
+           
         }
     ]
 }
